@@ -179,7 +179,8 @@
             "type": "String"
         },
         "adminPassword": {
-            "defaultValue": "Mongo@123!@#"
+            "defaultValue": "Mongo@123!@#",
+            "type": "String"
         }
     },
     "variables": {},
