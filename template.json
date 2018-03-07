@@ -2125,7 +2125,7 @@
                 "publicIPAllocationMethod": "Static",
                 "idleTimeoutInMinutes": 4,
                 "dnsSettings": {
-                    "domainNameLabel": "mongo-config1-test",
+                    "domainNameLabel": "mongo-config1-test1",
                     "fqdn": "mongo-config1-test1.eastus.cloudapp.azure.com"
                 }
             },
@@ -2149,7 +2149,7 @@
                 "publicIPAllocationMethod": "Static",
                 "idleTimeoutInMinutes": 4,
                 "dnsSettings": {
-                    "domainNameLabel": "mongo-config2-test",
+                    "domainNameLabel": "mongo-config2-test1",
                     "fqdn": "mongo-config2-test1.eastus.cloudapp.azure.com"
                 }
             },
@@ -2173,7 +2173,7 @@
                 "publicIPAllocationMethod": "Static",
                 "idleTimeoutInMinutes": 4,
                 "dnsSettings": {
-                    "domainNameLabel": "mongo-router-test",
+                    "domainNameLabel": "mongo-router-test1",
                     "fqdn": "mongo-router-test1.eastus.cloudapp.azure.com"
                 }
             },
@@ -2197,7 +2197,7 @@
                 "publicIPAllocationMethod": "Static",
                 "idleTimeoutInMinutes": 4,
                 "dnsSettings": {
-                    "domainNameLabel": "mongo-sh1-test",
+                    "domainNameLabel": "mongo-sh1-test1",
                     "fqdn": "mongo-sh1-test1.eastus.cloudapp.azure.com"
                 }
             },
@@ -2221,7 +2221,7 @@
                 "publicIPAllocationMethod": "Static",
                 "idleTimeoutInMinutes": 4,
                 "dnsSettings": {
-                    "domainNameLabel": "mongo-sh2-test",
+                    "domainNameLabel": "mongo-sh2-test1",
                     "fqdn": "mongo-sh2-test1.eastus.cloudapp.azure.com"
                 }
             },
@@ -2245,7 +2245,7 @@
                 "publicIPAllocationMethod": "Static",
                 "idleTimeoutInMinutes": 4,
                 "dnsSettings": {
-                    "domainNameLabel": "mongo-sh3-test",
+                    "domainNameLabel": "mongo-sh3-test1",
                     "fqdn": "mongo-sh3-test1.eastus.cloudapp.azure.com"
                 }
             },
