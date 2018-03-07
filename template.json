@@ -182,7 +182,7 @@
     "variables": {},
     "resources": [
         {
-            "comments": "Generalized from resource: '/subscriptions/1fdc83b5-b0ce-4f20-ac10-1a135ea2a1dc/resourceGroups/Mongo-Cluster/providers/Microsoft.Compute/virtualMachines/mongoconfig1'.",
+            
             "type": "Microsoft.Compute/virtualMachines",
             "name": "[parameters('virtualMachines_mongoconfig1_name')]",
             "apiVersion": "2017-03-30",
@@ -564,7 +564,7 @@
                         "properties": {
                             "provisioningState": "Succeeded",
                             "privateIPAddress": "10.0.0.9",
-                            "privateIPAllocationMethod": "Dynamic",
+                            "privateIPAllocationMethod": "Static",
                             "publicIPAddress": {
                                 "id": "[resourceId('Microsoft.Network/publicIPAddresses', parameters('publicIPAddresses_mongoconfig1_ip_name'))]"
                             },
@@ -581,7 +581,7 @@
                     "appliedDnsServers": [],
                     "internalDomainNameSuffix": "oq13i2dltt1ebb4mhcpnv3gpcd.bx.internal.cloudapp.net"
                 },
-                "macAddress": "00-0D-3A-19-3E-B9",
+                
                 "enableAcceleratedNetworking": false,
                 "enableIPForwarding": false,
                 "networkSecurityGroup": {
@@ -616,7 +616,7 @@
                         "properties": {
                             "provisioningState": "Succeeded",
                             "privateIPAddress": "10.0.0.8",
-                            "privateIPAllocationMethod": "Dynamic",
+                            "privateIPAllocationMethod": "Static",
                             "publicIPAddress": {
                                 "id": "[resourceId('Microsoft.Network/publicIPAddresses', parameters('publicIPAddresses_mongoconfig2_ip_name'))]"
                             },
@@ -633,7 +633,7 @@
                     "appliedDnsServers": [],
                     "internalDomainNameSuffix": "oq13i2dltt1ebb4mhcpnv3gpcd.bx.internal.cloudapp.net"
                 },
-                "macAddress": "00-0D-3A-10-6E-90",
+                
                 "enableAcceleratedNetworking": false,
                 "enableIPForwarding": false,
                 "networkSecurityGroup": {
@@ -668,7 +668,7 @@
                         "properties": {
                             "provisioningState": "Succeeded",
                             "privateIPAddress": "10.0.0.7",
-                            "privateIPAllocationMethod": "Dynamic",
+                            "privateIPAllocationMethod": "Static",
                             "publicIPAddress": {
                                 "id": "[resourceId('Microsoft.Network/publicIPAddresses', parameters('publicIPAddresses_mongoConfig_ip_name'))]"
                             },
@@ -684,7 +684,7 @@
                     "dnsServers": [],
                     "appliedDnsServers": []
                 },
-                "macAddress": "00-0D-3A-18-CE-EC",
+                
                 "enableAcceleratedNetworking": false,
                 "enableIPForwarding": false,
                 "networkSecurityGroup": {
@@ -714,7 +714,7 @@
                         "properties": {
                             "provisioningState": "Succeeded",
                             "privateIPAddress": "10.0.0.4",
-                            "privateIPAllocationMethod": "Dynamic",
+                            "privateIPAllocationMethod": "Static",
                             "publicIPAddress": {
                                 "id": "[resourceId('Microsoft.Network/publicIPAddresses', parameters('publicIPAddresses_mongoRouter_ip_name'))]"
                             },
@@ -731,7 +731,7 @@
                     "appliedDnsServers": [],
                     "internalDomainNameSuffix": "oq13i2dltt1ebb4mhcpnv3gpcd.bx.internal.cloudapp.net"
                 },
-                "macAddress": "00-0D-3A-11-20-C0",
+                
                 "enableAcceleratedNetworking": false,
                 "enableIPForwarding": false,
                 "networkSecurityGroup": {
@@ -766,7 +766,7 @@
                         "properties": {
                             "provisioningState": "Succeeded",
                             "privateIPAddress": "10.0.0.5",
-                            "privateIPAllocationMethod": "Dynamic",
+                            "privateIPAllocationMethod": "Static",
                             "publicIPAddress": {
                                 "id": "[resourceId('Microsoft.Network/publicIPAddresses', parameters('publicIPAddresses_mongosh1_ip_name'))]"
                             },
@@ -783,7 +783,7 @@
                     "appliedDnsServers": [],
                     "internalDomainNameSuffix": "oq13i2dltt1ebb4mhcpnv3gpcd.bx.internal.cloudapp.net"
                 },
-                "macAddress": "00-0D-3A-19-39-C9",
+                
                 "enableAcceleratedNetworking": false,
                 "enableIPForwarding": false,
                 "networkSecurityGroup": {
@@ -818,7 +818,7 @@
                         "properties": {
                             "provisioningState": "Succeeded",
                             "privateIPAddress": "10.0.0.6",
-                            "privateIPAllocationMethod": "Dynamic",
+                            "privateIPAllocationMethod": "Static",
                             "publicIPAddress": {
                                 "id": "[resourceId('Microsoft.Network/publicIPAddresses', parameters('publicIPAddresses_mongosh2_ip_name'))]"
                             },
@@ -835,7 +835,7 @@
                     "appliedDnsServers": [],
                     "internalDomainNameSuffix": "oq13i2dltt1ebb4mhcpnv3gpcd.bx.internal.cloudapp.net"
                 },
-                "macAddress": "00-0D-3A-1C-69-B9",
+                
                 "enableAcceleratedNetworking": false,
                 "enableIPForwarding": false,
                 "networkSecurityGroup": {
@@ -870,7 +870,7 @@
                         "properties": {
                             "provisioningState": "Succeeded",
                             "privateIPAddress": "10.0.0.10",
-                            "privateIPAllocationMethod": "Dynamic",
+                            "privateIPAllocationMethod": "Static",
                             "publicIPAddress": {
                                 "id": "[resourceId('Microsoft.Network/publicIPAddresses', parameters('publicIPAddresses_mongosh3_ip_name'))]"
                             },
@@ -887,7 +887,7 @@
                     "appliedDnsServers": [],
                     "internalDomainNameSuffix": "oq13i2dltt1ebb4mhcpnv3gpcd.bx.internal.cloudapp.net"
                 },
-                "macAddress": "00-0D-3A-17-69-8E",
+                
                 "enableAcceleratedNetworking": false,
                 "enableIPForwarding": false,
                 "networkSecurityGroup": {
@@ -2106,7 +2106,7 @@
                 "provisioningState": "Succeeded",
                 "resourceGuid": "b7fef05f-6578-4900-a384-9c5a5d672e67",
                 "publicIPAddressVersion": "IPv4",
-                "publicIPAllocationMethod": "Dynamic",
+                "publicIPAllocationMethod": "Static",
                 "idleTimeoutInMinutes": 4
             },
             "dependsOn": []
@@ -2126,7 +2126,7 @@
                 "resourceGuid": "bd95c42b-c384-4469-9da8-966127e9b27b",
                 "ipAddress": "52.170.115.72",
                 "publicIPAddressVersion": "IPv4",
-                "publicIPAllocationMethod": "Dynamic",
+                "publicIPAllocationMethod": "Static",
                 "idleTimeoutInMinutes": 4,
                 "dnsSettings": {
                     "domainNameLabel": "mongo-config1-test",
@@ -2150,7 +2150,7 @@
                 "resourceGuid": "0391e3af-a53e-4500-8d0c-4cfd0a3983eb",
                 "ipAddress": "52.170.115.225",
                 "publicIPAddressVersion": "IPv4",
-                "publicIPAllocationMethod": "Dynamic",
+                "publicIPAllocationMethod": "Static",
                 "idleTimeoutInMinutes": 4,
                 "dnsSettings": {
                     "domainNameLabel": "mongo-config2-test",
@@ -2174,7 +2174,7 @@
                 "resourceGuid": "d51c2295-ee3f-4bf1-b29a-4c98636b1fd2",
                 "ipAddress": "52.168.166.188",
                 "publicIPAddressVersion": "IPv4",
-                "publicIPAllocationMethod": "Dynamic",
+                "publicIPAllocationMethod": "Static",
                 "idleTimeoutInMinutes": 4,
                 "dnsSettings": {
                     "domainNameLabel": "mongo-router-test",
@@ -2198,7 +2198,7 @@
                 "resourceGuid": "f10a8ba0-acba-45b8-95df-0ff28fe2207d",
                 "ipAddress": "52.170.112.43",
                 "publicIPAddressVersion": "IPv4",
-                "publicIPAllocationMethod": "Dynamic",
+                "publicIPAllocationMethod": "Static",
                 "idleTimeoutInMinutes": 4,
                 "dnsSettings": {
                     "domainNameLabel": "mongo-sh1-test",
@@ -2222,7 +2222,7 @@
                 "resourceGuid": "e4ac0f44-fe28-435b-badc-01b22dff213e",
                 "ipAddress": "52.168.165.85",
                 "publicIPAddressVersion": "IPv4",
-                "publicIPAllocationMethod": "Dynamic",
+                "publicIPAllocationMethod": "Static",
                 "idleTimeoutInMinutes": 4,
                 "dnsSettings": {
                     "domainNameLabel": "mongo-sh2-test",
@@ -2246,7 +2246,7 @@
                 "resourceGuid": "405bb5a3-fa86-465c-b72b-8b3618a37ad4",
                 "ipAddress": "52.170.112.31",
                 "publicIPAddressVersion": "IPv4",
-                "publicIPAllocationMethod": "Dynamic",
+                "publicIPAllocationMethod": "Static",
                 "idleTimeoutInMinutes": 4,
                 "dnsSettings": {
                     "domainNameLabel": "mongo-sh3-test",
