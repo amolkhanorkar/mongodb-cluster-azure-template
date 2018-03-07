@@ -2126,7 +2126,7 @@
                 "idleTimeoutInMinutes": 4,
                 "dnsSettings": {
                     "domainNameLabel": "mongo-config1-test",
-                    "fqdn": "mongo-config1-test.eastus.cloudapp.azure.com"
+                    "fqdn": "mongo-config1-test1.eastus.cloudapp.azure.com"
                 }
             },
             "dependsOn": []
@@ -2150,7 +2150,7 @@
                 "idleTimeoutInMinutes": 4,
                 "dnsSettings": {
                     "domainNameLabel": "mongo-config2-test",
-                    "fqdn": "mongo-config2-test.eastus.cloudapp.azure.com"
+                    "fqdn": "mongo-config2-test1.eastus.cloudapp.azure.com"
                 }
             },
             "dependsOn": []
@@ -2174,7 +2174,7 @@
                 "idleTimeoutInMinutes": 4,
                 "dnsSettings": {
                     "domainNameLabel": "mongo-router-test",
-                    "fqdn": "mongo-router-test.eastus.cloudapp.azure.com"
+                    "fqdn": "mongo-router-test1.eastus.cloudapp.azure.com"
                 }
             },
             "dependsOn": []
@@ -2198,7 +2198,7 @@
                 "idleTimeoutInMinutes": 4,
                 "dnsSettings": {
                     "domainNameLabel": "mongo-sh1-test",
-                    "fqdn": "mongo-sh1-test.eastus.cloudapp.azure.com"
+                    "fqdn": "mongo-sh1-test1.eastus.cloudapp.azure.com"
                 }
             },
             "dependsOn": []
@@ -2222,7 +2222,7 @@
                 "idleTimeoutInMinutes": 4,
                 "dnsSettings": {
                     "domainNameLabel": "mongo-sh2-test",
-                    "fqdn": "mongo-sh2-test.eastus.cloudapp.azure.com"
+                    "fqdn": "mongo-sh2-test1.eastus.cloudapp.azure.com"
                 }
             },
             "dependsOn": []
@@ -2246,7 +2246,7 @@
                 "idleTimeoutInMinutes": 4,
                 "dnsSettings": {
                     "domainNameLabel": "mongo-sh3-test",
-                    "fqdn": "mongo-sh3-test.eastus.cloudapp.azure.com"
+                    "fqdn": "mongo-sh3-test1.eastus.cloudapp.azure.com"
                 }
             },
             "dependsOn": []
