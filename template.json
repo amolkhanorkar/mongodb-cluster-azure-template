@@ -14,10 +14,6 @@
             "defaultValue": "mongosh3",
             "type": "String"
         },
-        "actionGroups_FAS_Logging_name": {
-            "defaultValue": "FAS-Logging",
-            "type": "String"
-        },
         "virtualMachines_mongoRouter_name": {
             "defaultValue": "mongoRouter",
             "type": "String"
@@ -497,28 +493,7 @@
                 "[resourceId('Microsoft.Network/networkInterfaces', parameters('networkInterfaces_mongosh3907_name'))]"
             ]
         },
-        {
-            "comments": "Generalized from resource: '/subscriptions/1fdc83b5-b0ce-4f20-ac10-1a135ea2a1dc/resourceGroups/Mongo-Cluster/providers/microsoft.insights/actionGroups/FAS-Logging'.",
-            "type": "microsoft.insights/actionGroups",
-            "name": "[parameters('actionGroups_FAS_Logging_name')]",
-            "apiVersion": "2017-04-01",
-            "location": "Global",
-            "tags": {},
-            "scale": null,
-            "properties": {
-                "groupShortName": "[concat(parameters('actionGroups_FAS_Logging_name'),'fas-logging', parameters('actionGroups_FAS_Logging_name'))]",
-                "enabled": true,
-                "emailReceivers": [
-                    {
-                        "name": "fas-log-mail_-EmailAction-",
-                        "emailAddress": "deepesh.hada@motifworks.com"
-                    }
-                ],
-                "smsReceivers": [],
-                "webhookReceivers": []
-            },
-            "dependsOn": []
-        },
+        
         {
             "comments": "Generalized from resource: '/subscriptions/1fdc83b5-b0ce-4f20-ac10-1a135ea2a1dc/resourceGroups/Mongo-Cluster/providers/microsoft.insights/alertrules/cpu-usage-more-than-70-percent'.",
             "type": "microsoft.insights/alertrules",
