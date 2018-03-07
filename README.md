@@ -1,0 +1,1 @@
+# mongodb-cluster-azure-template
