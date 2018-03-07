@@ -87,7 +87,7 @@
             "type": "String"
         },
         "storageAccounts_mongoclusterdisks_name": {
-            "defaultValue": "mongoclusterdisks",
+            "defaultValue": "mongoclusterdiskstrg",
             "type": "String"
         },
         "networkSecurityGroups_mongosh1_nsg_name": {
