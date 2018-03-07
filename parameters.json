@@ -1,0 +1,138 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "virtualMachines_mongosh1_name": {
+            "value": null
+        },
+        "virtualMachines_mongosh2_name": {
+            "value": null
+        },
+        "virtualMachines_mongosh3_name": {
+            "value": null
+        },
+        "actionGroups_FAS_Logging_name": {
+            "value": null
+        },
+        "virtualMachines_mongoRouter_name": {
+            "value": null
+        },
+        "virtualMachines_mongoconfig1_name": {
+            "value": null
+        },
+        "virtualMachines_mongoconfig2_name": {
+            "value": null
+        },
+        "networkInterfaces_mongosh1842_name": {
+            "value": null
+        },
+        "networkInterfaces_mongosh2651_name": {
+            "value": null
+        },
+        "networkInterfaces_mongosh3907_name": {
+            "value": null
+        },
+        "publicIPAddresses_mongosh1_ip_name": {
+            "value": null
+        },
+        "publicIPAddresses_mongosh2_ip_name": {
+            "value": null
+        },
+        "publicIPAddresses_mongosh3_ip_name": {
+            "value": null
+        },
+        "networkInterfaces_mongorouter91_name": {
+            "value": null
+        },
+        "networkInterfaces_mongoconfig956_name": {
+            "value": null
+        },
+        "publicIPAddresses_mongoConfig_ip_name": {
+            "value": null
+        },
+        "publicIPAddresses_mongoRouter_ip_name": {
+            "value": null
+        },
+        "networkInterfaces_mongoconfig1248_name": {
+            "value": null
+        },
+        "networkInterfaces_mongoconfig2345_name": {
+            "value": null
+        },
+        "publicIPAddresses_mongoconfig1_ip_name": {
+            "value": null
+        },
+        "publicIPAddresses_mongoconfig2_ip_name": {
+            "value": null
+        },
+        "storageAccounts_mongoclusterdisks_name": {
+            "value": null
+        },
+        "networkSecurityGroups_mongosh1_nsg_name": {
+            "value": null
+        },
+        "networkSecurityGroups_mongosh2_nsg_name": {
+            "value": null
+        },
+        "networkSecurityGroups_mongosh3_nsg_name": {
+            "value": null
+        },
+        "virtualNetworks_Mongo_Cluster_vnet_name": {
+            "value": null
+        },
+        "networkSecurityGroups_mongoConfig_nsg_name": {
+            "value": null
+        },
+        "networkSecurityGroups_mongoRouter_nsg_name": {
+            "value": null
+        },
+        "networkSecurityGroups_mongoconfig1_nsg_name": {
+            "value": null
+        },
+        "networkSecurityGroups_mongoconfig2_nsg_name": {
+            "value": null
+        },
+        "alertrules_cpu_usage_more_than_70_percent_name": {
+            "value": null
+        },
+        "subnets_default_name": {
+            "value": null
+        },
+        "securityRules_SMTP_name": {
+            "value": null
+        },
+        "securityRules_SMTP_name_1": {
+            "value": null
+        },
+        "securityRules_SMTP25_name": {
+            "value": null
+        },
+        "securityRules_MongoDB_name": {
+            "value": null
+        },
+        "securityRules_SMTP_outbound_name": {
+            "value": null
+        },
+        "securityRules_default_allow_ssh_name": {
+            "value": null
+        },
+        "securityRules_default_allow_ssh_name_1": {
+            "value": null
+        },
+        "securityRules_default_allow_ssh_name_2": {
+            "value": null
+        },
+        "securityRules_default_allow_ssh_name_3": {
+            "value": null
+        },
+        "securityRules_default_allow_ssh_name_4": {
+            "value": null
+        },
+        "securityRules_default_allow_ssh_name_5": {
+            "value": null
+        },
+        "securityRules_default_allow_ssh_name_6": {
+            "value": null
+        }
+    }
+}
