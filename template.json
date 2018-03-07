@@ -177,6 +177,9 @@
         "securityRules_default_allow_ssh_name_6": {
             "defaultValue": "default-allow-ssh",
             "type": "String"
+        },
+        "adminPassword": {
+            "defaultValue": "Mongo@123!@#"
         }
     },
     "variables": {},
@@ -214,6 +217,7 @@
                 "osProfile": {
                     "computerName": "[parameters('virtualMachines_mongoconfig1_name')]",
                     "adminUsername": "mongo",
+                    "adminPassword": "[parameters('adminPassword')]",
                     "linuxConfiguration": {
                         "disablePasswordAuthentication": false
                     },
@@ -265,6 +269,7 @@
                 "osProfile": {
                     "computerName": "[parameters('virtualMachines_mongoconfig2_name')]",
                     "adminUsername": "mongo",
+                    "adminPassword": "[parameters('adminPassword')]",
                     "linuxConfiguration": {
                         "disablePasswordAuthentication": false
                     },
@@ -316,6 +321,7 @@
                 "osProfile": {
                     "computerName": "[parameters('virtualMachines_mongoRouter_name')]",
                     "adminUsername": "mongo",
+                    "adminPassword": "[parameters('adminPassword')]",
                     "linuxConfiguration": {
                         "disablePasswordAuthentication": false
                     },
@@ -367,6 +373,7 @@
                 "osProfile": {
                     "computerName": "[parameters('virtualMachines_mongosh1_name')]",
                     "adminUsername": "mongo",
+                    "adminPassword": "[parameters('adminPassword')]",
                     "linuxConfiguration": {
                         "disablePasswordAuthentication": false
                     },
@@ -418,6 +425,7 @@
                 "osProfile": {
                     "computerName": "[parameters('virtualMachines_mongosh2_name')]",
                     "adminUsername": "mongo",
+                    "adminPassword": "[parameters('adminPassword')]",
                     "linuxConfiguration": {
                         "disablePasswordAuthentication": false
                     },
@@ -469,6 +477,7 @@
                 "osProfile": {
                     "computerName": "[parameters('virtualMachines_mongosh3_name')]",
                     "adminUsername": "mongo",
+                    "adminPassword": "[parameters('adminPassword')]",
                     "linuxConfiguration": {
                         "disablePasswordAuthentication": false
                     },
