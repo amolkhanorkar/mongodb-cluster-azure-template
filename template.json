@@ -744,8 +744,8 @@
             "dependsOn": [
                 "[resourceId('Microsoft.Network/publicIPAddresses', parameters('publicIPAddresses_mongoRouter_ip_name'))]",
                 "[resourceId('Microsoft.Network/virtualNetworks/subnets', parameters('virtualNetworks_Mongo_Cluster_vnet_name'), parameters('subnets_default_name'))]",
-                "[resourceId('Microsoft.Network/networkSecurityGroups', parameters('networkSecurityGroups_mongoRouter_nsg_name'))]",
-                "[resourceId('Microsoft.Compute/virtualMachines', parameters('virtualMachines_mongoRouter_name'))]"
+                "[resourceId('Microsoft.Network/networkSecurityGroups', parameters('networkSecurityGroups_mongoRouter_nsg_name'))]"
+             
             ]
         },
         {
@@ -796,8 +796,7 @@
             "dependsOn": [
                 "[resourceId('Microsoft.Network/publicIPAddresses', parameters('publicIPAddresses_mongosh1_ip_name'))]",
                 "[resourceId('Microsoft.Network/virtualNetworks/subnets', parameters('virtualNetworks_Mongo_Cluster_vnet_name'), parameters('subnets_default_name'))]",
-                "[resourceId('Microsoft.Network/networkSecurityGroups', parameters('networkSecurityGroups_mongosh1_nsg_name'))]",
-                "[resourceId('Microsoft.Compute/virtualMachines', parameters('virtualMachines_mongosh1_name'))]"
+                "[resourceId('Microsoft.Network/networkSecurityGroups', parameters('networkSecurityGroups_mongosh1_nsg_name'))]"
             ]
         },
         {
@@ -848,8 +847,7 @@
             "dependsOn": [
                 "[resourceId('Microsoft.Network/publicIPAddresses', parameters('publicIPAddresses_mongosh2_ip_name'))]",
                 "[resourceId('Microsoft.Network/virtualNetworks/subnets', parameters('virtualNetworks_Mongo_Cluster_vnet_name'), parameters('subnets_default_name'))]",
-                "[resourceId('Microsoft.Network/networkSecurityGroups', parameters('networkSecurityGroups_mongosh2_nsg_name'))]",
-                "[resourceId('Microsoft.Compute/virtualMachines', parameters('virtualMachines_mongosh2_name'))]"
+                "[resourceId('Microsoft.Network/networkSecurityGroups', parameters('networkSecurityGroups_mongosh2_nsg_name'))]"
             ]
         },
         {
@@ -900,8 +898,7 @@
             "dependsOn": [
                 "[resourceId('Microsoft.Network/publicIPAddresses', parameters('publicIPAddresses_mongosh3_ip_name'))]",
                 "[resourceId('Microsoft.Network/virtualNetworks/subnets', parameters('virtualNetworks_Mongo_Cluster_vnet_name'), parameters('subnets_default_name'))]",
-                "[resourceId('Microsoft.Network/networkSecurityGroups', parameters('networkSecurityGroups_mongosh3_nsg_name'))]",
-                "[resourceId('Microsoft.Compute/virtualMachines', parameters('virtualMachines_mongosh3_name'))]"
+                "[resourceId('Microsoft.Network/networkSecurityGroups', parameters('networkSecurityGroups_mongosh3_nsg_name'))]"
             ]
         },
         {
