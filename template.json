@@ -236,23 +236,23 @@
         },
         {
           "type": "Microsoft.Compute/virtualMachines/extensions",
-          "name": "[concat(parameters('virtualMachines_mongosh1_name'),'/installmongo')]",
+          "name": "[concat(parameters('virtualMachines_mongoconfig1_name'),'/installmongo')]",
           "apiVersion": "2015-05-01-preview",
           "location": "[resourceGroup().location]",
           "dependsOn": [
-          "[concat('Microsoft.Compute/virtualMachines/', parameters('virtualMachines_mongosh1_name'))]"
+          "[concat('Microsoft.Compute/virtualMachines/', parameters('virtualMachines_mongoconfig1_name'))]"
           ],
           "properties": {
-          "publisher": "Microsoft.Azure.Extensions",
-          "type": "CustomScript",
-          "typeHandlerVersion": "2.0",
-          "autoUpgradeMinorVersion": true,
-          "settings": {
-          "fileUris": [
-            "https://raw.githubusercontent.com/amolkhanorkar/mongodb-cluster-azure-template/stage/mongo-install-ubuntu.sh"
-          ],
-          "commandToExecute": "sh mongo-install-ubuntu.sh"
-          }   
+            "publisher": "Microsoft.Azure.Extensions",
+            "type": "CustomScript",
+            "typeHandlerVersion": "2.0",
+            "autoUpgradeMinorVersion": true,
+            "settings": {
+              "fileUris": [
+                "https://raw.githubusercontent.com/amolkhanorkar/mongodb-cluster-azure-template/stage/mongo-install-ubuntu.sh"
+              ],
+              "commandToExecute": "sh mongo-install-ubuntu.sh"
+            }   
           }    
         },
 
