@@ -1,7 +1,8 @@
 #!/bin/bash
 
 cfg="{
-    _id: 'set',
+    _id: 'rsconfig1',
+    configsvr: true,
     members: [
         {_id: 0, host: '10.0.0.9:27019'},
         {_id: 1, host: '10.0.0.8:27019'}
