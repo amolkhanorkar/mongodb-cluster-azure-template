@@ -7,4 +7,4 @@ cfg="{
         {_id: 1, host: '10.0.0.8:27019'}
     ]
 }"
-/usr/bin/mongo 10.0.0.8:27019 --eval "JSON.stringify(db.adminCommand({'replSetInitiate' : $cfg}))"
+mongo 10.0.0.8:27019 --eval "JSON.stringify(db.adminCommand({'replSetInitiate' : $cfg}))"
