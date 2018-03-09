@@ -234,6 +234,7 @@
                 "[resourceId('Microsoft.Network/networkInterfaces', parameters('networkInterfaces_mongoconfig1248_name'))]"
             ]
         },
+
         {
           "type": "Microsoft.Compute/virtualMachines/extensions",
           "name": "[concat(parameters('virtualMachines_mongoconfig1_name'),'/installmongo')]",
@@ -252,6 +253,28 @@
                 "https://raw.githubusercontent.com/amolkhanorkar/mongodb-cluster-azure-template/stage/mongo-install-ubuntu.sh"
               ],
               "commandToExecute": "sh mongo-install-ubuntu.sh"
+            }   
+          }    
+        },
+
+        {
+          "type": "Microsoft.Compute/virtualMachines/extensions",
+          "name": "[concat(parameters('virtualMachines_mongoconfig1_name'),'/config-service.sh')]",
+          "apiVersion": "2015-05-01-preview",
+          "location": "[resourceGroup().location]",
+          "dependsOn": [
+          "[concat('Microsoft.Compute/virtualMachines/', parameters('virtualMachines_mongoconfig1_name'))]"
+          ],
+          "properties": {
+            "publisher": "Microsoft.Azure.Extensions",
+            "type": "CustomScript",
+            "typeHandlerVersion": "2.0",
+            "autoUpgradeMinorVersion": true,
+            "settings": {
+              "fileUris": [
+                "https://raw.githubusercontent.com/amolkhanorkar/mongodb-cluster-azure-template/stage/config-service.sh"
+              ],
+              "commandToExecute": "sh config-service.sh"
             }   
           }    
         },
@@ -308,6 +331,7 @@
                 "[resourceId('Microsoft.Network/networkInterfaces', parameters('networkInterfaces_mongoconfig2345_name'))]"
             ]
         },
+
         {
           "type": "Microsoft.Compute/virtualMachines/extensions",
           "name": "[concat(parameters('virtualMachines_mongoconfig2_name'),'/installmongo')]",
@@ -326,6 +350,28 @@
                 "https://raw.githubusercontent.com/amolkhanorkar/mongodb-cluster-azure-template/stage/mongo-install-ubuntu.sh"
               ],
               "commandToExecute": "sh mongo-install-ubuntu.sh"
+            }   
+          }    
+        },
+
+        {
+          "type": "Microsoft.Compute/virtualMachines/extensions",
+          "name": "[concat(parameters('virtualMachines_mongoconfig2_name'),'/config-service.sh')]",
+          "apiVersion": "2015-05-01-preview",
+          "location": "[resourceGroup().location]",
+          "dependsOn": [
+          "[concat('Microsoft.Compute/virtualMachines/', parameters('virtualMachines_mongoconfig2_name'))]"
+          ],
+          "properties": {
+            "publisher": "Microsoft.Azure.Extensions",
+            "type": "CustomScript",
+            "typeHandlerVersion": "2.0",
+            "autoUpgradeMinorVersion": true,
+            "settings": {
+              "fileUris": [
+                "https://raw.githubusercontent.com/amolkhanorkar/mongodb-cluster-azure-template/stage/config-service.sh"
+              ],
+              "commandToExecute": "sh config-service.sh"
             }   
           }    
         },
@@ -382,6 +428,7 @@
                 "[resourceId('Microsoft.Network/networkInterfaces', parameters('networkInterfaces_mongorouter91_name'))]"
             ]
         },
+
         {
           "type": "Microsoft.Compute/virtualMachines/extensions",
           "name": "[concat(parameters('virtualMachines_mongoRouter_name'),'/installmongo')]",
@@ -403,6 +450,28 @@
             }   
           }    
         },
+
+        {
+          "type": "Microsoft.Compute/virtualMachines/extensions",
+          "name": "[concat(parameters('virtualMachines_mongoRouter_name'),'/router-service.sh')]",
+          "apiVersion": "2015-05-01-preview",
+          "location": "[resourceGroup().location]",
+          "dependsOn": [
+          "[concat('Microsoft.Compute/virtualMachines/', parameters('virtualMachines_mongoRouter_name'))]"
+          ],
+          "properties": {
+            "publisher": "Microsoft.Azure.Extensions",
+            "type": "CustomScript",
+            "typeHandlerVersion": "2.0",
+            "autoUpgradeMinorVersion": true,
+            "settings": {
+              "fileUris": [
+                "https://raw.githubusercontent.com/amolkhanorkar/mongodb-cluster-azure-template/stage/router-service.sh"
+              ],
+              "commandToExecute": "sh router-service.sh"
+            }   
+          }    
+        }
 
         {
             "comments": "Generalized from resource: '/subscriptions/1fdc83b5-b0ce-4f20-ac10-1a135ea2a1dc/resourceGroups/Mongo-Cluster/providers/Microsoft.Compute/virtualMachines/mongosh1'.",
@@ -480,6 +549,28 @@
         },
         
         {
+          "type": "Microsoft.Compute/virtualMachines/extensions",
+          "name": "[concat(parameters('virtualMachines_mongosh1_name'),'/replicaset-service.sh')]",
+          "apiVersion": "2015-05-01-preview",
+          "location": "[resourceGroup().location]",
+          "dependsOn": [
+          "[concat('Microsoft.Compute/virtualMachines/', parameters('virtualMachines_mongosh1_name'))]"
+          ],
+          "properties": {
+            "publisher": "Microsoft.Azure.Extensions",
+            "type": "CustomScript",
+            "typeHandlerVersion": "2.0",
+            "autoUpgradeMinorVersion": true,
+            "settings": {
+              "fileUris": [
+                "https://raw.githubusercontent.com/amolkhanorkar/mongodb-cluster-azure-template/stage/replicaset-service.sh"
+              ],
+              "commandToExecute": "sh replicaset-service.sh"
+            }   
+          }    
+        },
+
+        {
             "comments": "Generalized from resource: '/subscriptions/1fdc83b5-b0ce-4f20-ac10-1a135ea2a1dc/resourceGroups/Mongo-Cluster/providers/Microsoft.Compute/virtualMachines/mongosh2'.",
             "type": "Microsoft.Compute/virtualMachines",
             "name": "[parameters('virtualMachines_mongosh2_name')]",
@@ -555,6 +646,28 @@
         },
 
         {
+          "type": "Microsoft.Compute/virtualMachines/extensions",
+          "name": "[concat(parameters('virtualMachines_mongosh1_name'),'/replicaset-service.sh')]",
+          "apiVersion": "2015-05-01-preview",
+          "location": "[resourceGroup().location]",
+          "dependsOn": [
+          "[concat('Microsoft.Compute/virtualMachines/', parameters('virtualMachines_mongosh1_name'))]"
+          ],
+          "properties": {
+            "publisher": "Microsoft.Azure.Extensions",
+            "type": "CustomScript",
+            "typeHandlerVersion": "2.0",
+            "autoUpgradeMinorVersion": true,
+            "settings": {
+              "fileUris": [
+                "https://raw.githubusercontent.com/amolkhanorkar/mongodb-cluster-azure-template/stage/replicaset-service.sh"
+              ],
+              "commandToExecute": "sh replicaset-service.sh"
+            }   
+          }    
+        },
+
+        {
             "comments": "Generalized from resource: '/subscriptions/1fdc83b5-b0ce-4f20-ac10-1a135ea2a1dc/resourceGroups/Mongo-Cluster/providers/Microsoft.Compute/virtualMachines/mongosh3'.",
             "type": "Microsoft.Compute/virtualMachines",
             "name": "[parameters('virtualMachines_mongosh3_name')]",
@@ -625,6 +738,28 @@
                 "https://raw.githubusercontent.com/amolkhanorkar/mongodb-cluster-azure-template/stage/mongo-install-ubuntu.sh"
               ],
               "commandToExecute": "sh mongo-install-ubuntu.sh"
+            }   
+          }    
+        },
+        
+        {
+          "type": "Microsoft.Compute/virtualMachines/extensions",
+          "name": "[concat(parameters('virtualMachines_mongosh1_name'),'/replicaset-service.sh')]",
+          "apiVersion": "2015-05-01-preview",
+          "location": "[resourceGroup().location]",
+          "dependsOn": [
+          "[concat('Microsoft.Compute/virtualMachines/', parameters('virtualMachines_mongosh1_name'))]"
+          ],
+          "properties": {
+            "publisher": "Microsoft.Azure.Extensions",
+            "type": "CustomScript",
+            "typeHandlerVersion": "2.0",
+            "autoUpgradeMinorVersion": true,
+            "settings": {
+              "fileUris": [
+                "https://raw.githubusercontent.com/amolkhanorkar/mongodb-cluster-azure-template/stage/replicaset-service.sh"
+              ],
+              "commandToExecute": "sh replicaset-service.sh"
             }   
           }    
         },
