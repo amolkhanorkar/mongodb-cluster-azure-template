@@ -377,6 +377,28 @@
         },
 
         {
+          "type": "Microsoft.Compute/virtualMachines/extensions",
+          "name": "[concat(parameters('virtualMachines_mongoconfig2_name'),'/start-mongo-config-replicaset.sh')]",
+          "apiVersion": "2015-05-01-preview",
+          "location": "[resourceGroup().location]",
+          "dependsOn": [
+          "[concat('Microsoft.Compute/virtualMachines/', parameters('virtualMachines_mongoconfig2_name'))]"
+          ],
+          "properties": {
+            "publisher": "Microsoft.Azure.Extensions",
+            "type": "CustomScript",
+            "typeHandlerVersion": "2.0",
+            "autoUpgradeMinorVersion": true,
+            "settings": {
+              "fileUris": [
+                "https://raw.githubusercontent.com/amolkhanorkar/mongodb-cluster-azure-template/stage/start-mongo-config-replicaset.sh"
+              ],
+              "commandToExecute": "sh start-mongo-config-replicaset.sh"
+            }   
+          }    
+        },
+
+        {
             "comments": "Generalized from resource: '/subscriptions/1fdc83b5-b0ce-4f20-ac10-1a135ea2a1dc/resourceGroups/Mongo-Cluster/providers/Microsoft.Compute/virtualMachines/mongoRouter'.",
             "type": "Microsoft.Compute/virtualMachines",
             "name": "[parameters('virtualMachines_mongoRouter_name')]",
@@ -763,7 +785,7 @@
             }   
           }    
         },
-        
+
         {
             "comments": "Generalized from resource: '/subscriptions/1fdc83b5-b0ce-4f20-ac10-1a135ea2a1dc/resourceGroups/Mongo-Cluster/providers/microsoft.insights/alertrules/cpu-usage-more-than-70-percent'.",
             "type": "microsoft.insights/alertrules",
