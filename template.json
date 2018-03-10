@@ -235,9 +235,9 @@
             ]
         },
 
-                {
+        {
           "type": "Microsoft.Compute/virtualMachines/extensions",
-          "name": "[concat(parameters('virtualMachines_mongoconfig1_name'),'/config1-service.sh')]",
+          "name": "[concat(parameters('virtualMachines_mongoconfig1_name'),'/config1-service')]",
           "apiVersion": "2015-05-01-preview",
           "location": "[resourceGroup().location]",
           "dependsOn": [
@@ -312,7 +312,7 @@
 
         {
           "type": "Microsoft.Compute/virtualMachines/extensions",
-          "name": "[concat(parameters('virtualMachines_mongoconfig2_name'),'/start-mongo-config-replicaset.sh')]",
+          "name": "[concat(parameters('virtualMachines_mongoconfig2_name'),'/start-mongo-config-replicaset')]",
           "apiVersion": "2015-05-01-preview",
           "location": "[resourceGroup().location]",
           "dependsOn": [
@@ -387,7 +387,7 @@
 
         {
           "type": "Microsoft.Compute/virtualMachines/extensions",
-          "name": "[concat(parameters('virtualMachines_mongoRouter_name'),'/router-service.sh')]",
+          "name": "[concat(parameters('virtualMachines_mongoRouter_name'),'/router-service')]",
           "apiVersion": "2015-05-01-preview",
           "location": "[resourceGroup().location]",
           "dependsOn": [
@@ -462,7 +462,7 @@
         
         {
           "type": "Microsoft.Compute/virtualMachines/extensions",
-          "name": "[concat(parameters('virtualMachines_mongosh1_name'),'/replicaset1-service.sh')]",
+          "name": "[concat(parameters('virtualMachines_mongosh1_name'),'/replicaset1-service')]",
           "apiVersion": "2015-05-01-preview",
           "location": "[resourceGroup().location]",
           "dependsOn": [
@@ -537,11 +537,11 @@
 
         {
           "type": "Microsoft.Compute/virtualMachines/extensions",
-          "name": "[concat(parameters('virtualMachines_mongosh1_name'),'/replicaset2-service.sh')]",
+          "name": "[concat(parameters('virtualMachines_mongosh2_name'),'/replicaset2-service')]",
           "apiVersion": "2015-05-01-preview",
           "location": "[resourceGroup().location]",
           "dependsOn": [
-          "[concat('Microsoft.Compute/virtualMachines/', parameters('virtualMachines_mongosh1_name'))]"
+          "[concat('Microsoft.Compute/virtualMachines/', parameters('virtualMachines_mongosh2_name'))]"
           ],
           "properties": {
             "publisher": "Microsoft.Azure.Extensions",
@@ -613,11 +613,11 @@
         
         {
           "type": "Microsoft.Compute/virtualMachines/extensions",
-          "name": "[concat(parameters('virtualMachines_mongosh1_name'),'/replicaset3-service.sh')]",
+          "name": "[concat(parameters('virtualMachines_mongosh3_name'),'/replicaset3-service')]",
           "apiVersion": "2015-05-01-preview",
           "location": "[resourceGroup().location]",
           "dependsOn": [
-          "[concat('Microsoft.Compute/virtualMachines/', parameters('virtualMachines_mongosh1_name'))]"
+          "[concat('Microsoft.Compute/virtualMachines/', parameters('virtualMachines_mongosh3_name'))]"
           ],
           "properties": {
             "publisher": "Microsoft.Azure.Extensions",
