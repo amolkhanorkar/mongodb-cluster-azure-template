@@ -206,7 +206,7 @@
             "scale": null,
             "properties": {
                 "availabilitySet": {
-                    "id": "[resourceId('Microsoft.Compute/availabilitySets', variables('availabilitySetName'))]"
+                    "id": "[resourceId('Microsoft.Compute/availabilitySets', parameters('availabilitySetName'))]"
                 },
                 "hardwareProfile": {
                     "vmSize": "Standard_B1s"
@@ -285,7 +285,7 @@
             "scale": null,
             "properties": {
                 "availabilitySet": {
-                    "id": "[resourceId('Microsoft.Compute/availabilitySets', variables('availabilitySetName'))]"
+                    "id": "[resourceId('Microsoft.Compute/availabilitySets', parameters('availabilitySetName'))]"
                 },
                 "hardwareProfile": {
                     "vmSize": "Standard_B1s"
@@ -363,7 +363,7 @@
             "scale": null,
             "properties": {
                 "availabilitySet": {
-                    "id": "[resourceId('Microsoft.Compute/availabilitySets', variables('availabilitySetName'))]"
+                    "id": "[resourceId('Microsoft.Compute/availabilitySets', parameters('availabilitySetName'))]"
                 },
                 "hardwareProfile": {
                     "vmSize": "Standard_A1"
@@ -441,7 +441,7 @@
             "scale": null,
             "properties": {
                 "availabilitySet": {
-                    "id": "[resourceId('Microsoft.Compute/availabilitySets', variables('availabilitySetName'))]"
+                    "id": "[resourceId('Microsoft.Compute/availabilitySets', parameters('availabilitySetName'))]"
                 },
                 "hardwareProfile": {
                     "vmSize": "Standard_B2s"
@@ -519,7 +519,7 @@
             "scale": null,
             "properties": {
                 "availabilitySet": {
-                    "id": "[resourceId('Microsoft.Compute/availabilitySets', variables('availabilitySetName'))]"
+                    "id": "[resourceId('Microsoft.Compute/availabilitySets', parameters('availabilitySetName'))]"
                 },
                 "hardwareProfile": {
                     "vmSize": "Standard_B2s"
@@ -597,7 +597,7 @@
             "scale": null,
             "properties": {
                 "availabilitySet": {
-                    "id": "[resourceId('Microsoft.Compute/availabilitySets', variables('availabilitySetName'))]"
+                    "id": "[resourceId('Microsoft.Compute/availabilitySets', parameters('availabilitySetName'))]"
                 },
                 "hardwareProfile": {
                     "vmSize": "Standard_B2s"
