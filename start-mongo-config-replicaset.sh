@@ -38,7 +38,7 @@ nohup /usr/bin/mongod  --configsvr --replSet rsconfig1 --dbpath /data/db --bind_
 #/usr/bin/mongo 10.0.0.8:27019 --eval "JSON.stringify(db.adminCommand({'replSetInitiate' : $cfg}))"
 
 /usr/bin/mongo 10.0.0.8:27019 << !
-rs.initiate({_id: "rs0", configsvr: true, members: [{_id: 0, host: "10.0.0.9:27019"}, {_id: 1, host: "$10.0.0.8:27019"}]});
+rs.initiate({_id: "rs0", configsvr: true, members: [{_id: 0, host: "10.0.0.9:27019"}, {_id: 1, host: "10.0.0.8:27019"}]});
 
 #//rs.initiate({_id: "rs0", members: [{_id: 0, host: "${local_ip}:27020"}, {_id: 1, host: "${local_ip}:27021"}]});
 !
