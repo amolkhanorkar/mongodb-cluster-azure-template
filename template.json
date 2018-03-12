@@ -177,10 +177,26 @@
         "adminPassword": {
             "defaultValue": "Mongo@123!@#",
             "type": "String"
+        },
+        "availabilitySetName": {
+            "defaultValue": "availabilitySet_mongodbCluster",
+            "type": "String"
         }
     },
     "variables": {},
+    
     "resources": [
+        {
+            "type": "Microsoft.Compute/availabilitySets",
+            "name": "[parameters('availabilitySetName')]",
+            "apiVersion": "2015-06-15",
+            "location": "[resourceGroup().location]",
+            "properties": {
+                "platformFaultDomainCount": "3",
+                "platformUpdateDomainCount": "20"
+           }
+        },
+
         {
             
             "type": "Microsoft.Compute/virtualMachines",
@@ -189,6 +205,9 @@
             "location": "eastus",
             "scale": null,
             "properties": {
+                "availabilitySet": {
+                    "id": "[resourceId('Microsoft.Compute/availabilitySets', variables('availabilitySetName'))]"
+                },
                 "hardwareProfile": {
                     "vmSize": "Standard_B1s"
                 },
@@ -265,6 +284,9 @@
             "location": "eastus",
             "scale": null,
             "properties": {
+                "availabilitySet": {
+                    "id": "[resourceId('Microsoft.Compute/availabilitySets', variables('availabilitySetName'))]"
+                },
                 "hardwareProfile": {
                     "vmSize": "Standard_B1s"
                 },
@@ -340,6 +362,9 @@
             "location": "eastus",
             "scale": null,
             "properties": {
+                "availabilitySet": {
+                    "id": "[resourceId('Microsoft.Compute/availabilitySets', variables('availabilitySetName'))]"
+                },
                 "hardwareProfile": {
                     "vmSize": "Standard_A1"
                 },
@@ -415,6 +440,9 @@
             "location": "eastus",
             "scale": null,
             "properties": {
+                "availabilitySet": {
+                    "id": "[resourceId('Microsoft.Compute/availabilitySets', variables('availabilitySetName'))]"
+                },
                 "hardwareProfile": {
                     "vmSize": "Standard_B2s"
                 },
@@ -490,6 +518,9 @@
             "location": "eastus",
             "scale": null,
             "properties": {
+                "availabilitySet": {
+                    "id": "[resourceId('Microsoft.Compute/availabilitySets', variables('availabilitySetName'))]"
+                },
                 "hardwareProfile": {
                     "vmSize": "Standard_B2s"
                 },
@@ -565,6 +596,9 @@
             "location": "eastus",
             "scale": null,
             "properties": {
+                "availabilitySet": {
+                    "id": "[resourceId('Microsoft.Compute/availabilitySets', variables('availabilitySetName'))]"
+                },
                 "hardwareProfile": {
                     "vmSize": "Standard_B2s"
                 },
