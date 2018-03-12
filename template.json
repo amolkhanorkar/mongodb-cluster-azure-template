@@ -312,7 +312,7 @@
 
         {
           "type": "Microsoft.Compute/virtualMachines/extensions",
-          "name": "[concat(parameters('virtualMachines_mongoconfig2_name'),'/start-mongo-config-replicaset')]",
+          "name": "[concat(parameters('virtualMachines_mongoconfig2_name'),'/start-mongo-config-replicaset.sh')]",
           "apiVersion": "2015-05-01-preview",
           "location": "[resourceGroup().location]",
           "dependsOn": [
